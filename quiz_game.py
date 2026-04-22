@@ -125,81 +125,81 @@
 
 # --------------- START ---------------
 
-import random
+# import random
 
-def run_dice_program():
+# def run_dice_program():
 
-    """ This is Dice Program """
+#     """ This is Dice Program """
 
-    def greetings():
-        message = "Welcome"
-        border = "*" * 10
-        print(border)
-        print(message.center(30))
-        print(border)
+#     def greetings():
+#         message = "Welcome"
+#         border = "*" * 10
+#         print(border)
+#         print(message.center(30))
+#         print(border)
 
-    def dice_art(num):
-        if num == 1:
-            print("┌─────────┐")
-            print("│         │")
-            print("│    ●    │")
-            print("│         │")
-            print("└─────────┘")
-        elif num == 2:
-            print("┌─────────┐")
-            print("│  ●      │")
-            print("│         │")
-            print("│      ●  │")
-            print("└─────────┘")
-        elif num == 3:
-            print("┌─────────┐")
-            print("│  ●      │")
-            print("│    ●    │")
-            print("│      ●  │")
-            print("└─────────┘")
-        elif num == 4:
-            print("┌─────────┐")
-            print("│  ●   ●  │")
-            print("│         │")
-            print("│  ●   ●  │")
-            print("└─────────┘")
-        elif num == 5:
-            print("┌─────────┐")
-            print("│  ●   ●  │")
-            print("│    ●    │")
-            print("│  ●   ●  │")
-            print("└─────────┘")
-        elif num == 6:
-            print("┌─────────┐")
-            print("│  ●   ●  │")
-            print("│  ●   ●  │")
-            print("│  ●   ●  │")
-            print("└─────────┘")
+#     def dice_art(num):
+#         if num == 1:
+#             print("┌─────────┐")
+#             print("│         │")
+#             print("│    ●    │")
+#             print("│         │")
+#             print("└─────────┘")
+#         elif num == 2:
+#             print("┌─────────┐")
+#             print("│  ●      │")
+#             print("│         │")
+#             print("│      ●  │")
+#             print("└─────────┘")
+#         elif num == 3:
+#             print("┌─────────┐")
+#             print("│  ●      │")
+#             print("│    ●    │")
+#             print("│      ●  │")
+#             print("└─────────┘")
+#         elif num == 4:
+#             print("┌─────────┐")
+#             print("│  ●   ●  │")
+#             print("│         │")
+#             print("│  ●   ●  │")
+#             print("└─────────┘")
+#         elif num == 5:
+#             print("┌─────────┐")
+#             print("│  ●   ●  │")
+#             print("│    ●    │")
+#             print("│  ●   ●  │")
+#             print("└─────────┘")
+#         elif num == 6:
+#             print("┌─────────┐")
+#             print("│  ●   ●  │")
+#             print("│  ●   ●  │")
+#             print("│  ●   ●  │")
+#             print("└─────────┘")
 
-    count = 0
+#     count = 0
 
-    while True:
-        players = ["Fawad", "Ubaid", "Mamoon", "Furqan"]
+#     while True:
+#         players = ["Fawad", "Ubaid", "Mamoon", "Furqan"]
 
-        for index in range(4):
-            number = random.randint(1, 6)
-            input(f"{players[index]}'s turn (Press Enter): ")
-            dice_art(number)
-            while number == 6:
-                count += 1
-                if count == 3:
-                    print("--------------------------------------------------")
-                    print("Oops! Three consecutive 6s rolled. Turn forfeited!")
-                    print("--------------------------------------------------")
-                    count = 0
-                    break
-                number = random.randint(1, 6)
-                input(f"{players[index]}'s turn (Press Enter): ")
-                dice_art(number)
-            index += 1
+#         for index in range(4):
+#             number = random.randint(1, 6)
+#             input(f"{players[index]}'s turn (Press Enter): ")
+#             dice_art(number)
+#             while number == 6:
+#                 count += 1
+#                 if count == 3:
+#                     print("--------------------------------------------------")
+#                     print("Oops! Three consecutive 6s rolled. Turn forfeited!")
+#                     print("--------------------------------------------------")
+#                     count = 0
+#                     break
+#                 number = random.randint(1, 6)
+#                 input(f"{players[index]}'s turn (Press Enter): ")
+#                 dice_art(number)
+#             index += 1
 
-if __name__ == "__main__":
-    run_dice_program()
+# if __name__ == "__main__":
+#     run_dice_program()
 
 # --------------- END -----------------
 
